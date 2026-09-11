@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="SafeAI Together helps older people, families and community organisations use AI confidently and recognise AI-enabled scams.">
+  <meta name="description" content="SafeAI Together helps older people, families, community organisations, and graduates navigate AI, career tools, and scam safety.">
   <title>SafeAI Together | AI confidence and scam safety</title>
   <style>
     :root {
@@ -54,6 +54,7 @@
     nav { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:18px; }
     nav a { color:var(--navy); text-decoration:none; font-size:.95rem; font-weight:700; }
     nav a:hover, nav a:focus { color:var(--teal); text-decoration:underline; }
+    .nav-highlight { color:var(--blue); border-bottom:2px solid var(--gold); padding-bottom:2px; }
 
     .hero { background:linear-gradient(135deg,var(--navy),#1c5d85); color:var(--white); padding:88px 0 96px; }
     .hero-grid { display:grid; grid-template-columns:1.12fr .88fr; gap:52px; align-items:center; }
@@ -88,6 +89,19 @@
     .step { position:relative; padding-left:78px; }
     .step:before { counter-increment:step; content:counter(step); position:absolute; left:26px; top:28px; width:38px; height:38px; display:grid; place-items:center; border-radius:50%; background:var(--teal); color:var(--white); font-weight:800; }
 
+    .banner-card {
+      background:var(--white);
+      border:2px solid var(--teal);
+      border-radius:14px;
+      padding:28px;
+      margin-top:28px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+      box-shadow:0 6px 20px #0b253d12;
+    }
+
     form { display:grid; gap:12px; }
     label { font-weight:800; }
     input, textarea, select { width:100%; padding:13px; border:1px solid #9fb3c8; border-radius:6px; font:inherit; color:var(--ink); background:var(--white); }
@@ -109,6 +123,7 @@
 
     @media (max-width:820px) {
       .hero-grid, .grid, .two { grid-template-columns:1fr; }
+      .banner-card { flex-direction:column; align-items:flex-start; }
       nav { gap:10px 14px; }
       .nav { align-items:flex-start; padding-top:15px; padding-bottom:15px; flex-direction:column; }
       .hero { padding:64px 0 72px; }
@@ -137,6 +152,7 @@
       <a class="brand" href="#top" aria-label="SafeAI Together home">SafeAI <span>Together</span></a>
       <nav aria-label="Main navigation">
         <a href="#services">Support</a>
+        <a href="graduates.html" class="nav-highlight">Graduate Services</a>
         <a href="#learn">Learn</a>
         <a href="#safety">Stay safe</a>
         <a href="#about">About</a>
@@ -149,12 +165,12 @@
     <section class="hero" id="top">
       <div class="wrap hero-grid">
         <div>
-          <p class="eyebrow">Friendly AI confidence</p>
+          <p class="eyebrow">Friendly AI confidence &amp; Career Guidance</p>
           <h1>Use AI with confidence. Stay safe from scams.</h1>
-          <p>Practical, patient guidance for older people, families and community organisations—without jargon, judgement or pressure.</p>
+          <p>Practical, patient guidance for older people, families, community organisations, and graduates navigating modern AI recruitment tools.</p>
           <div class="actions">
             <a class="btn primary" href="#contact">Book a friendly conversation</a>
-            <a class="btn secondary" href="#safety">See safety guidance</a>
+            <a class="btn secondary" href="graduates.html">Services for Graduates 🎓</a>
           </div>
         </div>
         <div class="card">
@@ -164,7 +180,7 @@
           <ul class="trust-list">
             <li>Human-led and easy to understand.</li>
             <li>Privacy-first and independent.</li>
-            <li>Designed with older people and carers.</li>
+            <li>Dedicated coaching for graduates and job-seekers.</li>
             <li>We never ask for passwords or banking codes.</li>
           </ul>
         </div>
@@ -175,7 +191,7 @@
       <div class="wrap">
         <div class="intro">
           <h2>AI can be useful—and confusing</h2>
-          <p>AI is increasingly part of everyday life, from online banking and customer service to search, messaging and voice assistants. It can also produce inaccurate information or be used by criminals to make scams more convincing.</p>
+          <p>AI is increasingly part of everyday life, from online banking and customer service to job applications, search, messaging and voice assistants. It can also produce inaccurate information or be used by criminals to make scams more convincing.</p>
           <p>SafeAI Together provides calm, practical guidance so people can use AI more confidently, protect personal information and recognise suspicious requests.</p>
         </div>
       </div>
@@ -203,6 +219,18 @@
             <h3>Family safety plans</h3>
             <p>Create simple check-in rules, trusted contacts, safe phrases and an agreed response if something goes wrong.</p>
           </article>
+        </div>
+
+        <!-- Graduate Services Banner Card -->
+        <div class="banner-card">
+          <div>
+            <span class="eyebrow" style="color:var(--teal)">New for 2026</span>
+            <h3>Looking for Graduate Career Services?</h3>
+            <p style="margin:6px 0 0; color:var(--muted)">We offer bespoke Resume/CV reviews, 1-on-1 interview coaching, and LinkedIn profile optimisation tailored for recent graduates.</p>
+          </div>
+          <div>
+            <a class="btn primary" href="graduates.html" style="white-space:nowrap;">View Graduate Services &rarr;</a>
+          </div>
         </div>
       </div>
     </section>
@@ -265,12 +293,12 @@
         <div>
           <h2>About SafeAI Together</h2>
           <p>SafeAI Together was created to make AI easier and safer for people who may feel excluded, pressured or uncertain when using technology.</p>
-          <p>The service is grounded in practical AI literacy, financial-crime awareness, consumer protection and respectful communication.</p>
+          <p>The service is grounded in practical AI literacy, financial-crime awareness, consumer protection and career readiness.</p>
         </div>
         <div class="card">
           <h3>Our boundaries</h3>
           <ul>
-            <li>We provide education and signposting.</li>
+            <li>We provide education, career guidance, and signposting.</li>
             <li>We do not provide financial, legal or medical advice.</li>
             <li>We do not move money or make decisions for you.</li>
             <li>We do not guarantee that every fake can be detected.</li>
@@ -284,12 +312,12 @@
       <div class="wrap two grid">
         <div>
           <h2>Start with a conversation</h2>
-          <p>Tell us what you or your organisation needs. We offer friendly introductory conversations, individual sessions and community workshops.</p>
-          <p><strong>Email:</strong> <a href="mailto:SafeAITogether@gmail.com">SafeAITogether@gmail.com</a></p>
+          <p>Tell us what you or your organisation needs. We offer friendly introductory conversations, graduate coaching sessions, and community workshops.</p>
+          <p><strong>Email:</strong> <a href="mailto:Dylandhayapatel@gmail.com">Dylandhayapatel@gmail.com</a></p>
           <p><strong>Important:</strong> Do not include passwords, PINs, one-time codes or bank details in your message.</p>
         </div>
         <div class="card">
-          <form action="mailto:SafeAITogether@gmail.com" method="post" enctype="text/plain">
+          <form action="mailto:Dylandhayapatel@gmail.com" method="post" enctype="text/plain">
             <label for="name">Your name</label>
             <input id="name" name="name" autocomplete="name" required>
 
@@ -298,6 +326,7 @@
 
             <label for="need">What would you like help with?</label>
             <select id="need" name="need">
+              <option>Graduate Services (CV / Interview / LinkedIn)</option>
               <option>Personal AI confidence</option>
               <option>Scam safety</option>
               <option>Family safety plan</option>
@@ -306,10 +335,10 @@
             </select>
 
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Please do not include passwords, PINs, bank details or one-time codes."></textarea>
+            <textarea id="message" name="message" placeholder="Please tell us what you would like to achieve. Do not include passwords, PINs, bank details or one-time codes."></textarea>
 
             <button class="btn primary" type="submit">Send an enquiry</button>
-            <p class="form-note">This starter form opens your email application. Replace it with a secure hosted form before collecting sensitive enquiries.</p>
+            <p class="form-note">Submitting will open your default email client addressed to Dylan Patel.</p>
           </form>
         </div>
       </div>
@@ -318,41 +347,16 @@
     <section id="privacy" class="policy-section">
       <div class="wrap">
         <h2>Privacy notice</h2>
-        <p class="updated">Last updated: 10 September 2026</p>
-        <p>SafeAI Together is operated by Safe AI Together Ltd., based in London, England. We provide AI-literacy, scam-awareness and related educational support.</p>
+        <p class="updated">Last updated: September 2026</p>
+        <p>SafeAI Together is operated by Safe AI Together Ltd., based in London, England. We provide AI-literacy, scam-awareness, graduate coaching and related educational support.</p>
         <h3>Information we collect</h3>
         <p>We may collect your name, contact details, preferred contact method, booking information, accessibility requirements and information you choose to include in an enquiry. Please do not send passwords, PINs, one-time passcodes, bank details or identity documents through this website.</p>
         <h3>How we use information</h3>
         <p>We use information to respond to enquiries, arrange sessions, provide requested support, improve our materials, manage safeguarding or fraud-related concerns where appropriate, maintain business records and comply with legal obligations.</p>
         <h3>Sharing and retention</h3>
-        <p>We do not sell personal information. We may share relevant information with service providers supporting our website or email, professional advisers, emergency services, banks, safeguarding teams or law-enforcement bodies where necessary, lawful and proportionate. We keep information only for as long as needed for the relevant purpose. [Add your specific retention periods before launch.]</p>
+        <p>We do not sell personal information. We may share relevant information with service providers supporting our website or email, professional advisers, emergency services, banks, safeguarding teams or law-enforcement bodies where necessary, lawful and proportionate.</p>
         <h3>Your rights</h3>
-        <p>You may have rights to access, correct, erase or restrict use of your information and to object to certain processing. Contact <a href="mailto:SafeAITogether@gmail.com">SafeAITogether@gmail.com</a>. You can complain to the <a href="https://ico.org.uk/make-a-complaint/" target="_blank" rel="noopener">Information Commissioner's Office</a>.</p>
-        <h3>Cookies</h3>
-        <p>This starter website does not intentionally use non-essential analytics or marketing cookies. Update this section if you add analytics, embedded content, advertising or other third-party services.</p>
-      </div>
-    </section>
-
-    <section id="accessibility" class="policy-section">
-      <div class="wrap">
-        <h2>Accessibility statement</h2>
-        <p class="updated">Last reviewed: 2026</p>
-        <p>SafeAI Together aims to make this website usable by as many people as possible. We use plain English, readable text, responsive design, clear headings, keyboard-friendly controls and visible focus indicators. We use WCAG 2.2 AA as our accessibility benchmark.</p>
-        <p>This website is currently a prototype and has not yet undergone a full accessibility audit. Known limitations are: the contact form opens an email application and the site has not been tested with every screen reader or assistive technology.</p>
-        <p>If you have difficulty using any part of the website, need information in another format or would like to report an accessibility problem, contact <a href="mailto:SafeAITogether@gmail.com">SafeAITogether@gmail.com</a>. Please tell us the page, the problem and the format you need. We will try to provide a reasonable alternative.</p>
-        <p>We review this statement after significant website changes and at least annually.</p>
-      </div>
-    </section>
-
-    <section id="safeguarding" class="policy-section">
-      <div class="wrap">
-        <h2>Safeguarding statement</h2>
-        <p class="updated">Last reviewed: 2026</p>
-        <p>SafeAI Together is committed to treating adults with dignity and respect and to taking concerns about abuse, neglect, exploitation or financial abuse seriously.</p>
-        <p>Our service provides education and signposting. We do not replace adult social-care services, the police, banks, medical professionals, attorneys or regulated advisers.</p>
-        <p>We will not ask for passwords, PINs, one-time passcodes or remote access to online banking. We will not move money or make financial decisions for a participant.</p>
-        <p>If a safeguarding concern is disclosed, we will listen calmly, record relevant facts, avoid promising secrecy, explain what may need to happen next and seek advice or make a referral where necessary. If someone is in immediate danger, call 999. For a non-emergency concern in England, contact the relevant local authority adult safeguarding team.</p>
-        <p>For suspected fraud, contact the victim's bank immediately and use the official <a href="https://www.reportfraud.police.uk/" target="_blank" rel="noopener">Report Fraud service</a>. Do not use this website to submit passwords, banking codes or sensitive evidence.</p>
+        <p>You may have rights to access, correct, erase or restrict use of your information and to object to certain processing. Contact <a href="mailto:Dylandhayapatel@gmail.com">Dylandhayapatel@gmail.com</a>.</p>
       </div>
     </section>
 
@@ -361,47 +365,20 @@
         <h2>Terms of use</h2>
         <p class="updated">Last updated: 2026</p>
         <p>This website is operated by Safe AI Together Ltd. The information is provided for general education and is not financial, legal, medical, cyber-security or regulated investment advice.</p>
-        <p>We aim to keep information accurate and current, but we do not guarantee that every page is complete, error-free or suitable for a particular situation. Verify important information with the relevant bank, regulator, public authority or qualified professional.</p>
-        <p>Our sessions are educational and do not guarantee that a person will avoid fraud or that we can determine whether every message, voice, image or video is genuine.</p>
-        <p>You must not use our service to provide passwords, PINs, one-time codes, full bank details or other security credentials. We may refuse or end a session where doing so is necessary for safety, safeguarding, confidentiality or legal reasons.</p>
-        <p>If you suspect fraud, contact your bank immediately and report the matter through the official reporting route. If there is immediate danger, call 999.</p>
-        <p>To book or cancel a session, contact <a href="mailto:SafeAITogether@gmail.com">SafeAITogether@gmail.com</a>. [Add cancellation, payment, refund and complaints terms if you charge for sessions.]</p>
-        <p>These terms are governed by the law of England and Wales, subject to any mandatory rights you may have.</p>
-      </div>
-    </section>
-
-    <section id="reporting" class="policy-section">
-      <div class="wrap">
-        <h2>Official support and reporting</h2>
-        <p>Use official contact routes and never rely solely on a message or caller's instructions.</p>
-        <ul>
-          <li><a href="https://www.reportfraud.police.uk/" target="_blank" rel="noopener">Report Fraud</a> — report suspected fraud in England, Wales and Northern Ireland.</li>
-          <li><a href="https://www.gov.uk/report-fraud-and-cyber-crime" target="_blank" rel="noopener">GOV.UK fraud and cyber-crime guidance</a>.</li>
-          <li><a href="https://www.fca.org.uk/consumers/fca-firm-checker" target="_blank" rel="noopener">FCA Firm Checker</a> — check whether a financial firm is authorised.</li>
-          <li><a href="https://www.ncsc.gov.uk/collection/phishing-scams" target="_blank" rel="noopener">National Cyber Security Centre phishing and scam guidance</a>.</li>
-          <li><a href="https://www.ageuk.org.uk/information-advice/money-legal/scams-fraud/" target="_blank" rel="noopener">Age UK scams and fraud advice</a>.</li>
-          <li><a href="https://www.citizensadvice.org.uk/consumer/" target="_blank" rel="noopener">Citizens Advice consumer advice</a>.</li>
-          <li><a href="https://ico.org.uk/make-a-complaint/" target="_blank" rel="noopener">Information Commissioner's Office complaints information</a>.</li>
-          <li><a href="https://www.gov.uk/report-abuse-of-older-person" target="_blank" rel="noopener">GOV.UK information about reporting abuse of an older person</a>.</li>
-        </ul>
-        <p><strong>If someone is in immediate danger, call 999.</strong></p>
-        <p>Contact a bank using the number on the back of the card or a known official source. Where available, UK consumers can use 159 to contact participating banks safely.</p>
+        <p>To book or cancel a session, contact <a href="mailto:Dylandhayapatel@gmail.com">Dylandhayapatel@gmail.com</a>.</p>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="wrap">
-      <p><strong>SafeAI Together</strong> — practical AI confidence and scam safety.</p>
+      <p><strong>SafeAI Together</strong> — practical AI confidence, scam safety, and graduate career acceleration.</p>
       <div class="footer-links" aria-label="Legal and support links">
         <a href="#privacy">Privacy notice</a>
-        <a href="#accessibility">Accessibility</a>
-        <a href="#safeguarding">Safeguarding</a>
         <a href="#terms">Terms of use</a>
-        <a href="#reporting">Fraud reporting</a>
-        <a href="mailto:SafeAITogether@gmail.com">Email us</a>
+        <a href="graduates.html">Graduate Services</a>
+        <a href="mailto:Dylandhayapatel@gmail.com">Email Dylan</a>
       </div>
-      <p class="small">This website is an early prototype. Replace bracketed placeholders, complete your policies and check all official links before launch.</p>
       <a class="back-top" href="#top">Back to top</a>
     </div>
   </footer>
